@@ -19,6 +19,7 @@ HTMLHelper::_('jquery.framework');
 $doc = Factory::getDocument();
 $doc->addStyleSheet(Uri::root() . "modules/mod_cookies/assets/gdpr-cookie.css");
 $doc->addScript("modules/mod_cookies/assets/gdpr-cookie.min.js");
+// Look at assets/gdpr-cookie.js for additional options (originally there are 4 cookie types defined in cookieTypes)
 $doc->addScriptDeclaration("
 
     jQuery.gdprcookie.init({
