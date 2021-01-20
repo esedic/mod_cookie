@@ -59,13 +59,13 @@ $doc->addScriptDeclaration("
             console.log('This should run because analytics is accepted.');
 
             var gaScript = document.createElement('script');
-            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=UA-140408639-1';
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X';
             document.getElementsByTagName('head')[0].appendChild(gaScript);
 
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'UA-140408639-1');
+            gtag('config', 'UA-XXXXXXXXX-X');
         }
 
         if (jQuery.gdprcookie.preference('essential') === true) {
